@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bootstrap Theme</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Blogen</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- left nav item -->
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="posts.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="users.html" class="nav-link">Users</a>
+          </li>
+        </ul>
+        <!-- right nav item -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fas fa-user"></i> Welcome Heang
+            </a>
+            <div class="dropdown-menu">
+              <a href="profile.html" class="dropdown-item"><i class="fas fa-user-circle"></i> Profile
+              </a>
+              <a href="settings.html" class="dropdown-item"><i class="fas fa-cog"></i> Settings
+              </a>
+            </div> <!--end of dropdown menu-->
+          </li>
+          <!-- log out -->
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fas fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul> <!--end of right nav item-->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="main-header" class="py-2 bg-secondary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1> Post One</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Action -->
+  <section id="action" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <!-- first action -->
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-primary btn-block">
+            <i class="fas fa-arrow-left"></i> Back To Dashboard
+          </a>
+        </div>
+        <!-- second action -->
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-success btn-block">
+            <i class="fas fa-check"></i> Save Changes
+          </a>
+        </div>
+        <!-- third action -->
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-danger btn-block">
+            <span class="text-white">
+              <i class="fas fa-trash"></i> Delete
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail -->
+  <section id="details">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Edit Post</h4>
+                </div>
+                <!-- card body -->
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" value="Post One">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select class="form-control">
+                                <option value="selected">Web Development</option>
+                                <option value="">Tech Gadgets</option>
+                                <option value="">Business</option>
+                                <option value="">Health & Wellness</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="image">Upload Image</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="image">
+                                <label for="image" class="custom-file-label">Choose File</label>
+                            </div>
+                            <small class="form-text text-muted">Max Size 3mb</small>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="body">Body</label>
+                            <textarea name="editor1" class="form-control">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Temporibus unde eveniet nostrum, sunt optio quod illo cupiditate vero impedit debitis enim nulla! Modi sit suscipit totam dicta omnis architecto qui veniam. In, quod magni aliquam cum nesciunt iusto accusantium quas tenetur molestias autem soluta repellendus deleniti nisi voluptates!
+                            </textarea>
+                        </div>
+                    </form>
+                </div> <!--end of card body-->
+            </div>
+        </div>
+      </div> <!--end of row-->
+    </div> <!--end of container-->
+  </section>
+
+  <!-- footer -->
+  <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead text-center">
+            Copyright &copy; <span id="year"></span>
+            Heang Ly
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <!-- Add POST Modal -->
+  <div class="modal fade" id="addPostModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Add Post</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div> <!--end of modal header-->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select class="form-control">
+                <option value="">Web Development</option>
+                <option value="">Tech Gadgets</option>
+                <option value="">Business</option>
+                <option value="">Health & Wellness</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="image">Upload Image</label>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="image">
+                <label for="image" class="custom-file-label">Choose File</label>
+              </div>
+              <small class="form-text text-muted">Max Size 3mb</small>
+            </div>
+
+            <div class="form-group">
+              <label for="body">Body</label>
+              <textarea name="editor1" class="form-control"></textarea>
+            </div>
+          </form>
+        </div> <!--end of modal body-->
+        <!-- modal footer -->
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-dismiss="modal">Save Change</button>
+        </div>
+      </div> <!--end of modal content-->
+    </div>
+  </div> <!--end of add-post-modal-->
+
+  <!-- Add CATEGORIES Modal -->
+  <div class="modal fade" id="addCategoryModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Add Category</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div> <!--end of modal header-->
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control">
+              </div>
+            </form>
+          </div> <!--end of modal body-->
+          <!-- modal footer -->
+          <div class="modal-footer">
+            <button class="btn btn-success" data-dismiss="modal">Save Change</button>
+          </div>
+        </div> <!--end of modal content-->
+      </div>
+    </div> <!--end of add-category-modal-->
+
+  <!-- Add USER Modal -->
+  <div class="modal fade" id="addUserModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-white">
+            <h5 class="modal-title">Add Users</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div> <!--end of modal header-->
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title">Name</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control">
+              </div>
+
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control">
+              </div>
+
+              <div class="form-group">
+                  <label for="password">Confirm Password</label>
+                  <input type="password" class="form-control">
+              </div>
+            </form>
+          </div> <!--end of modal body-->
+          <!-- modal footer -->
+          <div class="modal-footer">
+            <button class="btn btn-warning" data-dismiss="modal">Save Change</button>
+          </div>
+        </div> <!--end of modal content-->
+      </div>
+    </div> <!--end of add-category-modal-->
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <!-- ck cdn (text-edtior) -->
+  <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+    // ck text-editor
+    CKEDITOR.replace( 'editor1' );
+  </script>
+</body>
+
+</html>
